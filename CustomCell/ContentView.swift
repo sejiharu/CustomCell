@@ -12,11 +12,29 @@ struct ContentView: View {
     @State var address: String = ""
     @State var city: String = ""
     @State var categories: [String] = []
-    @State var kilometres: Double = 0.0
+    @State var kilometres: Double = 1.1
     var body: some View {
         ZStack(alignment: .leading){
             Color.flatDarkCardBackground
-            Text("test")
+            ZStack{
+                Circle()
+                    .fill(
+                        LinearGradient(
+                            gradient: Gradient(colors: [Color.pink, Color.red]),
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        )
+                    )
+                VStack {
+                    Text(String(format: "%.1f", kilometres))
+                        .font(.system(size: 20, weight: .bold))
+                        .foregroundColor(.white)
+                                        
+                    Text("km")
+                        .font(.caption)
+                        .foregroundColor(.white)
+                }
+            }.frame(width: 70, height: 70, alignment: .center)
         }
     }
 }
