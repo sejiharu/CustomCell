@@ -8,9 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var title: String = ""
+    @State var address: String = ""
+    @State var city: String = ""
+    @State var categories: [String] = []
+    @State var kilometres: Double = 0.0
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ZStack(alignment: .leading){
+            Color.flatDarkCardBackground
+            Text("test")
+        }
     }
 }
 

@@ -11,6 +11,7 @@
 		EC06EB0D29CF7F8000C9AB85 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC06EB0C29CF7F8000C9AB85 /* ContentView.swift */; };
 		EC06EB0F29CF7F8200C9AB85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC06EB0E29CF7F8200C9AB85 /* Assets.xcassets */; };
 		EC06EB1229CF7F8200C9AB85 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC06EB1129CF7F8200C9AB85 /* Preview Assets.xcassets */; };
+		EC06EB1929D0894D00C9AB85 /* UIColor+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC06EB1829D0894D00C9AB85 /* UIColor+Extention.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		EC06EB0C29CF7F8000C9AB85 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EC06EB0E29CF7F8200C9AB85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC06EB1129CF7F8200C9AB85 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EC06EB1829D0894D00C9AB85 /* UIColor+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extention.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				EC06EB0A29CF7F8000C9AB85 /* CustomCellApp.swift */,
 				EC06EB0C29CF7F8000C9AB85 /* ContentView.swift */,
+				EC06EB1829D0894D00C9AB85 /* UIColor+Extention.swift */,
 				EC06EB0E29CF7F8200C9AB85 /* Assets.xcassets */,
 				EC06EB1029CF7F8200C9AB85 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC06EB1929D0894D00C9AB85 /* UIColor+Extention.swift in Sources */,
 				EC06EB0D29CF7F8000C9AB85 /* ContentView.swift in Sources */,
 				EC06EB0B29CF7F8000C9AB85 /* CustomCellApp.swift in Sources */,
 			);
