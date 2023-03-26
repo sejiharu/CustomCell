@@ -11,7 +11,7 @@ import SwiftUI
 struct CustomCellApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TestList()
         }
     }
 }
