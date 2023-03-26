@@ -20,7 +20,11 @@ struct TestList: View {
             NavigationView{
                 VStack{
                     List{
-                        ContentView().listRowInsets(EdgeInsets(top: 0, leading: 10, bottom: 10, trailing: 10)).listRowBackground(Color.flatDarkBackground)
+                        Button(action: {
+                            print("taped")
+                        }, label: {
+                            ContentView()
+                        }).listRowInsets(EdgeInsets(top: 0, leading: 10, bottom: 10, trailing: 10)).listRowBackground(Color.flatDarkBackground)
                         ContentView().listRowInsets(EdgeInsets(top: 5, leading: 10, bottom: 10, trailing: 10)).listRowBackground(Color.flatDarkBackground)
                         ContentView().listRowInsets(EdgeInsets(top: 5, leading: 10, bottom: 10, trailing: 10)).listRowBackground(Color.flatDarkBackground)
                         ContentView().listRowInsets(EdgeInsets(top: 5, leading: 10, bottom: 10, trailing: 10)).listRowBackground(Color.flatDarkBackground)
