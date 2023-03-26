@@ -10,22 +10,31 @@ import SwiftUI
 struct TestList: View {
     init() {
         UITableView.appearance().backgroundColor = .flatDarkBackground
+        UINavigationBar.appearance().barTintColor = .flatDarkBackground
+        UINavigationBar.appearance().tintColor = .white
+        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.white]
+        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.white]
     }
     var body: some View {
         ZStack{
-            List{
-                ContentView().listRowInsets(EdgeInsets(top: 5, leading: 10, bottom: 10, trailing: 10)).listRowBackground(Color.flatDarkBackground)
-                ContentView().listRowInsets(EdgeInsets(top: 5, leading: 10, bottom: 10, trailing: 10)).listRowBackground(Color.flatDarkBackground)
-                ContentView().listRowInsets(EdgeInsets(top: 5, leading: 10, bottom: 10, trailing: 10)).listRowBackground(Color.flatDarkBackground)
-                ContentView().listRowInsets(EdgeInsets(top: 5, leading: 10, bottom: 10, trailing: 10)).listRowBackground(Color.flatDarkBackground)
-                ContentView().listRowInsets(EdgeInsets(top: 5, leading: 10, bottom: 10, trailing: 10)).listRowBackground(Color.flatDarkBackground)
-                ContentView().listRowInsets(EdgeInsets(top: 5, leading: 10, bottom: 10, trailing: 10)).listRowBackground(Color.flatDarkBackground)
-                ContentView().listRowInsets(EdgeInsets(top: 5, leading: 10, bottom: 10, trailing: 10)).listRowBackground(Color.flatDarkBackground)
-                ContentView().listRowInsets(EdgeInsets(top: 5, leading: 10, bottom: 10, trailing: 10)).listRowBackground(Color.flatDarkBackground)
-                ContentView().listRowInsets(EdgeInsets(top: 5, leading: 10, bottom: 10, trailing: 10)).listRowBackground(Color.flatDarkBackground)
-                ContentView().listRowInsets(EdgeInsets(top: 5, leading: 10, bottom: 10, trailing: 10)).listRowBackground(Color.flatDarkBackground)
+            NavigationView{
+                VStack{
+                    List{
+                        ContentView().listRowInsets(EdgeInsets(top: 0, leading: 10, bottom: 10, trailing: 10)).listRowBackground(Color.flatDarkBackground)
+                        ContentView().listRowInsets(EdgeInsets(top: 5, leading: 10, bottom: 10, trailing: 10)).listRowBackground(Color.flatDarkBackground)
+                        ContentView().listRowInsets(EdgeInsets(top: 5, leading: 10, bottom: 10, trailing: 10)).listRowBackground(Color.flatDarkBackground)
+                        ContentView().listRowInsets(EdgeInsets(top: 5, leading: 10, bottom: 10, trailing: 10)).listRowBackground(Color.flatDarkBackground)
+                        ContentView().listRowInsets(EdgeInsets(top: 5, leading: 10, bottom: 10, trailing: 10)).listRowBackground(Color.flatDarkBackground)
+                        ContentView().listRowInsets(EdgeInsets(top: 5, leading: 10, bottom: 10, trailing: 10)).listRowBackground(Color.flatDarkBackground)
+                        ContentView().listRowInsets(EdgeInsets(top: 5, leading: 10, bottom: 10, trailing: 10)).listRowBackground(Color.flatDarkBackground)
+                        ContentView().listRowInsets(EdgeInsets(top: 5, leading: 10, bottom: 10, trailing: 10)).listRowBackground(Color.flatDarkBackground)
+                        ContentView().listRowInsets(EdgeInsets(top: 5, leading: 10, bottom: 10, trailing: 10)).listRowBackground(Color.flatDarkBackground)
+                        ContentView().listRowInsets(EdgeInsets(top: 5, leading: 10, bottom: 10, trailing: 10)).listRowBackground(Color.flatDarkBackground)
 
-            }.listStyle(GroupedListStyle())
+                    }.listStyle(GroupedListStyle())
+                        .navigationTitle(Text("List Title"))
+                }
+            }
         }
     }
 }
